@@ -1,5 +1,5 @@
 module.exports = {
-    selectText: '🇺🇳️',
+    selectText: '🇩🇪',
     label: 'Deutsch',
     ariaLabel: 'Sprachen',
     editLinkText: 'Diese Seite auf GitHub bearbeiten',
