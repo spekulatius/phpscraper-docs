@@ -15,7 +15,7 @@ module.exports = {
 
         '@vuepress/pwa': {
             serviceWorker: true,
-            updatePopup: false
+            updatePopup: true
         },
         '@vuepress/plugin-back-to-top': {},
 
@@ -58,8 +58,7 @@ module.exports = {
     },
     themeConfig: {
         domain: 'https://phpscraper.de',
-        repo: 'spekulatius/phpscraper',
-        docsDir: 'websites',
+        repo: 'spekulatius/phpscraper-docs',
         editLinks: true,
         smoothScroll: true,
         locales: {
