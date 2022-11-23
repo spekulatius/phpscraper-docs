@@ -13,10 +13,12 @@ PHPScraper là một thư viện cào dành cho PHP, đơn giản. Thư viện n
 
 Các ví dụ kể câu chuyện hay hơn nhiều. Hãy xem!
 
+
 Ý tưởng 💡️
 ----------
 
 Việc truy cập và lấy các thông tin cơ bản của trang web rất phức tạp. Wrapper [Goutte](https://github.com/FriendsOfPHP/Goutte) này giúp việc này trở nên dễ dàng hơn. Nó giúp bạn tiết kiệm khỏi XPath và đồng., Cho phép bạn truy cập trực tiếp vào mọi thứ bạn cần. Hình dung lại trang web bằng PHP.
+
 
 Nhà tài trợ 💪️
 -------------
@@ -36,7 +38,7 @@ Dưới đây là một số ví dụ về những gì mà thư viện cào web 
 ### Cào thông tin meta:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Điều hướng đến trang test. Trang này có:
@@ -60,7 +62,7 @@ Gần như mọi thông tin đều có thể lấy được trực tiếp, dư�
 ### Cào nội dung, như hình ảnh
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Điều hướng đến trang test. Trang này có hai ảnh:
@@ -91,6 +93,7 @@ Một số thông tin *tùy chọn* được trả về dưới dạng một m�
 
 Có thể tìm thấy thêm code ví dụ trong các `examples` và `tests`.
 
+
 Cài đặt
 ------------
 
@@ -113,12 +116,48 @@ Nếu bạn đang làm trong dự án PHP thuần, bạn cần phải include au
 require 'vendor/autoload.php';
 ```
 
-Nếu bạn đang sử dụng framework như Laravel, Symfony, Zend, Phalcon hoặc CakePHP, bạn không cần làm bước này. Autoloader sẽ được đưa vào tự động.
+Nếu bạn đang sử dụng framework như Laravel, Symfony, Laminas, Phalcon hoặc CakePHP, bạn không cần làm bước này. Autoloader sẽ được đưa vào tự động.
+
+
+Cấu hình
+-------------
+
+Các cấu hình sau không bắt buộc. Bên dưới là các tuỳ chọn có sẵn.
+
+### Hỗ trợ proxy
+
+Nếu bạn cần sử dụng proxy, bạn có thể cấu hình proxy bằng `setConfig`:
+
+```php
+$web->setConfig(['proxy' => 'http://user:password@127.0.0.1:3128']);
+```
+
+### Timeout
+
+Nếu bạn cần sử dụng `timeout`, bạn có thể cấu hình timeout bằng `setConfig`:
+
+```php
+$web->setConfig(['timeout' => 15]);
+```
+
+Đặt thời gian chờ thành 0 sẽ vô hiệu hóa nó.
+
+### Tắt SSL
+
+Trong khi không được khuyến nghị, bạn có thể phải tắt kiểm tra SSL. Bạn có thể làm như vậy bằng cách sử dụng:
+
+```php
+$web->setConfig(['disable_ssl' => true]);
+```
+
+Bạn có thể gọi `setConfig` nhiều lần. Nó lưu trữ cấu hình và hợp nhất nó với các cài đặt trước đó. Điều này cần được ghi nhớ trong trường hợp sử dụng không mong muốn khi bỏ thiết lập giá trị.
+
 
 Tìm thấy lỗi và muốn sửa nó? Tuyệt vời!
 ----------------------------------
 
 Trước khi bắt đầu, hãy đọc qua [hướng dẫn đóng góp](/vi/contributing.html). Mọi thắc mắc vui lòng liên hệ.
+
 
 Tests: Đảm bảo nó hoạt động!
 ----------------------------

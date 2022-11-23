@@ -3,8 +3,8 @@ const path = require('path')
 
 module.exports = {
     dest: 'dist/',
-    title: 'PHP Scraper: Bringing Simplicity back to Scraping and Crawling',
-    description: 'PHP Scraper is providing a simpler way to fetch and parse websites using PHP.',
+    title: 'PHP Scraper: a web scraping utility for PHP',
+    description: 'PHP Scraper is bringing simplicity back to scraping and crawling websites with PHP.',
 
     plugins: {
         'seo': {},
@@ -58,7 +58,8 @@ module.exports = {
     },
     themeConfig: {
         domain: 'https://phpscraper.de',
-        repo: 'spekulatius/phpscraper-docs',
+        repo: 'spekulatius/phpscraper',
+        docsRepo: 'spekulatius/phpscraper-docs',
         editLinks: true,
         smoothScroll: true,
         locales: {

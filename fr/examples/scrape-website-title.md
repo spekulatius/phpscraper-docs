@@ -12,7 +12,7 @@ Extraire le titre d'un site Web est simple. Les exemples suivants montrent comme
 Exemple très simple de la façon de récupérer le titre d'un site web:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 // Naviguer vers la page de test - celle-ci contient une étiquette de titre "Lorem Ipsum".
 $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
@@ -33,7 +33,7 @@ var_dump($web->title);
 `null` sera retourné si le titre est manquant:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 // Naviguez vers la page de test - celle-ci ne contient pas de balise titre.
 $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -50,7 +50,7 @@ Note: C'est le comportement par défaut: Si une balise n'a pas été trouvée pa
 Chargement d'un titre de site web avec Umlaute allemand
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguez vers la page de test. Elle contient:
@@ -71,7 +71,7 @@ Cela devrait fonctionner de manière similaire avec tous les caractères UTF-8.
 Les entités HTML doivent être résolues
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguer vers la page de test. Contient:
@@ -84,6 +84,6 @@ $web->go('https://test-pages.phpscraper.de/meta/html-entities.html');
 echo $web->title;
 ```
 
-::: tip conseil
+::: tip Conseil
 Les entités et les caractères spéciaux ont été pris en compte dans toute la bibliothèque. Si vous trouvez un endroit où ils ne fonctionnent pas comme prévu, veuillez signaler le problème à l'administrateur. [numéro](https://github.com/spekulatius/PHPScraper/issues).
 :::

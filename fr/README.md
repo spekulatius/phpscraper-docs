@@ -42,7 +42,7 @@ Voici quelques exemples de ce que la bibliothèque de scraping web peut faire à
 ### Scrape Meta Information:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguez vers la page de test. Elle contient:
@@ -66,7 +66,7 @@ La plupart des autres informations sont accessibles directement, sous forme de c
 ### Racler du contenu, comme des images:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguez vers la page de test. Cette page contient deux images:
@@ -119,7 +119,41 @@ Si vous construisez un projet VanillaPHP, vous devrez inclure l'autoloader dans 
 require 'vendor/autoload.php';
 ```
 
-Si vous utilisez un framework tel que Laravel, Symfony, Zend, Phalcon ou CakePHP, vous n'aurez pas besoin de cette étape. L'autoloader est automatiquement inclus.
+Si vous utilisez un framework tel que Laravel, Symfony, Laminas, Phalcon ou CakePHP, vous n'aurez pas besoin de cette étape. L'autoloader est automatiquement inclus.
+
+
+Configuration
+-------------
+
+Une configuration supplémentaire est facultative. Voici les options correctement disponibles.
+
+### Support des proxys
+
+Si vous avez besoin de proxys, vous pouvez configurer le support des proxys avec `setConfig` :
+
+```php
+$web->setConfig(['proxy' => 'http://user:password@127.0.0.1:3128']);
+```
+
+### Timeout
+
+Vous pouvez définir le `timeout` en utilisant `setConfig`:
+
+```php
+$web->setConfig(['timeout' => 15]);
+```
+
+La mise à `0` (zéro) du délai d'attente le désactivera.
+
+### Désactivation de SSL
+
+Bien que cela ne soit pas recommandé, il peut être nécessaire de désactiver les contrôles SSL. Vous pouvez le faire en utilisant :
+
+```php
+$web->setConfig(['disable_ssl' => true]);
+```
+
+Vous pouvez appeler `setConfig` plusieurs fois. Il stocke la configuration et la fusionne avec les paramètres précédents. Ceci doit être gardé à l'esprit dans le cas improbable d'une utilisation pour annuler des valeurs.
 
 
 Vous avez trouvé un bug et l'avez corrigé ? C'est génial !

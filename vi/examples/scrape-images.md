@@ -11,7 +11,7 @@ Bạn có thể tự hỏi làm thế nào để lấy hình ảnh từ một tr
 Ví dụ sau đây sẽ trả về các hình ảnh trên trang web dưới dạng mảng URL:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Điều hướng đến trang test. Trang này có 2 ảnh:
@@ -27,7 +27,8 @@ $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
  *     'https://test-pages.phpscraper.de/assets/cat.jpg',
  * ]
  *
- * @Note:
+ * @note
+ *
  * Có hai cái vì hai ảnh giống nhau:
  * Một ảnh đường dẫn tuyệt đối và một ảnh tương đối.
  * Các đường dẫn tương đối sẽ đổi thành đường dẫn tuyệt đối.
@@ -44,7 +45,7 @@ Nếu không có hình ảnh nào, mảng sẽ bị rỗng.
 Nếu bạn muốn lấy thông tin chi tiết về hình ảnh, ví dụ sau sẽ lấy toàn bộ thuộc tính có trong thẻ `img`:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
 
 /**

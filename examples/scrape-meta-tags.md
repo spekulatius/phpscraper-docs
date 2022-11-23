@@ -2,9 +2,9 @@
 image: https://api.imageee.com/bold?text=PHP:%20Scraping%20Meta%20Tags&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
-# Scraping Meta Tags
+# Scrape Meta Tags
 
-Accessing the meta information follows a similar pattern as the previously shown [header tags](/examples/scrape-header-tags.html). Below is a set of examples:
+Accessing the meta information follows a similar pattern as the previously shown [header tags](/examples/scrape-header-tags.html). Below are examples to explain:
 
 
 ## Meta Author, Description and Image
@@ -16,7 +16,7 @@ The following example shows the extraction of three attributes:
 - the Meta Image URL
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navigate to the test page. It contains:
@@ -37,10 +37,10 @@ echo $web->image;           // "https://test-pages.phpscraper.de/assets/cat.jpg"
 
 ## Meta Keywords
 
-The keywords meta-tag is naturally an array and will be split for your convience:
+The keywords meta-tag is naturally an array and will be split for your convenience:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navigate to the test page. It contains:
@@ -56,7 +56,7 @@ var_dump($web->keywords);   // ['one', 'two', 'three']
 Alternatively, you can access the original keyword string:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 $web->go('https://test-pages.phpscraper.de/meta/keywords/parse-spaces.html');
 
 // Print the keywords as string
@@ -70,7 +70,7 @@ This refers only to the keywords in the "keyword" meta-tag. You can also [extrac
 
 ## Combined Meta Tags
 
-If you would like to access all meta properties you can use the `metaTags`-method. It returns the above mentioned methods as an array. It is defined as:
+You can use the `metaTags`-method if you would like to access all meta properties. It returns the above-mentioned methods as an array. It is defined as:
 
 ```php
 /**
@@ -89,10 +89,10 @@ public function metaTags()
 }
 ```
 
-From the example above it would be used as following:
+From the example above it would be used as follows:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 $web->go('https://test-pages.phpscraper.de/meta/keywords/parse-spaces.html');
 
 var_dump($web->metaTags);
@@ -111,4 +111,4 @@ var_dump($web->metaTags);
 
 ## Missing Meta Tags
 
-If you need to access another meta property, please read the [contribution guidelines](/contributing.html) before opening a pull request or submitting an [issue on GitHub](https://github.com/spekulatius/phpscraper/issues).
+This is similar to the PHP-native function [`get_meta_tags`](https://www.php.net/manual/en/function.get-meta-tags.php) but might not cover all use cases. If you need to access another meta property, please read the [contribution guidelines](/contributing.html) before opening a pull request or submitting an [issue on GitHub](https://github.com/spekulatius/phpscraper/issues).
