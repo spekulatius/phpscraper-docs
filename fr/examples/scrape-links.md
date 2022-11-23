@@ -12,7 +12,7 @@ Le scraping de liens fonctionne de manière très similaire ay [scraping d'image
 L'exemple suivant analyse une page Web à la recherche de liens et renvoie un tableau d'URL absolues:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguez vers la page de test. Elle contient 6 liens vers placekitten.com avec des attributs différents:
@@ -59,7 +59,7 @@ Si la page ne doit pas contenir de liens, un tableau vide est renvoyé.
 Si vous avez besoin de plus de détails, vous pouvez y accéder de la même manière que pour les images. Voici un exemple pour accéder aux données détaillées du premier lien de la page:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Naviguez vers la page de test. Cette page contient un certain nombre de liens avec des attributs rel différents. Pour gagner de la place, ne retenez que le premier:
@@ -76,6 +76,7 @@ $firstLink = $web->linksWithDetails[0];
  *
  * [
  *     'url' => 'https://placekitten.com/432/287',
+ *     'protocol' => 'https',
  *     'text' => 'external kitten',
  *     'title' => null,
  *     'target' => null,
@@ -93,10 +94,10 @@ Si vous avez besoin de plus de données, vous devrez soit étendre la bibliothè
 
 ## Liens internes et liens externes
 
-PHPScraper permet de retourner seulement des liens internes ou externes. Les liens internes comprennent les liens du même domaine racine ainsi que de tout sous-domaine. Si vous avez besoin d'obtenir seulement les liens dans le sous-domaine exact utilisez [`subdomainLinks`](#sub-domain-links) à la place. L'exemple suivant démontre les deux:
+PHPScraper permet de retourner seulement des liens internes ou externes. L'exemple suivant démontre les deux:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 // Naviguer vers la page de test.
 $web->go('https://test-pages.phpscraper.de/links/base-href.html');
@@ -117,25 +118,3 @@ var_dump($web->externalLinks);
  * ]
  */
 ```
-
-## Liens de sous-domaines
-
-Si vous avez besoin de récupérer uniquement les liens sur le sous-domaine exact, vous pouvez utiliser la méthode `subdomainLinks`:
-
-```php
-$web = new \spekulatius\phpscraper;
-
-// Naviguer vers la page de test.
-$web->go('https://test-pages.phpscraper.de/links/sub-domain-links.html');
-
-var_dump($web->subdomainLinks);
-/**
- * [
- *    'https://test-pages.phpscraper.de/',
- * ]
- */
-```
-
-::: warning avertissement
-Cela peut poser des problèmes lorsqu'un site mélange des liens avec *et* sans 'www', car www est considéré comme un sous-domaine.
-:::

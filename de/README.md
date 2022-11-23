@@ -2,8 +2,8 @@
 image: https://api.imageee.com/bold?text=PHP%20Scraper:%20Scraping%20und%20Crawling%20einfach%20gemacht&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
-PHP Scraper: Scraping und Crawling einfach gemacht
-==================================================
+PHP Scraper: ein web utility für PHP
+====================================
 
 ![PHP Scraper: Scraping und Crawling einfach gemacht](logo-light.png)
 
@@ -35,10 +35,10 @@ Beispiele: Code sagt mehr als Tausend Worte.
 
 Hier sind einige Beispiele dafür, was die Web-Scraping-Bibliothek an dieser Stelle tun kann:
 
-### Scrape Meta-Informationen:
+### Meta-Informationen Scrapen:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navigate to the test page. It contains:
@@ -59,10 +59,10 @@ echo $web->image;           // "https://test-pages.phpscraper.de/assets/cat.jpg"
 Nahezu alle Informationen können direkt als string oder array genutzt werden.
 
 
-### Scrape Content, such as Images:
+### Scrapen von Inhalten, beispielsweise Bilder:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navigate to the test page. This page contains two images:
@@ -129,7 +129,46 @@ Wenn Sie ein VanillaPHP-Projekt bauen, müssen Sie den Autoloader oben im Skript
 require 'vendor/autoload.php';
 ```
 
-Wenn Sie ein Framework wie Laravel, Symfony, Zend, Phalcon, oder CakePHP verwenden, brauchen Sie diesen Schritt nicht. Der Autoloader übernimmt die Arbeit.
+Wenn Sie ein Framework wie Laravel, Symfony, Laminas, Phalcon, oder CakePHP verwenden, brauchen Sie diesen Schritt nicht. Der Autoloader übernimmt die Arbeit.
+
+
+Konfiguration
+-------------
+
+Die weitere Konfiguration ist optional. Unterhalb finden Sie die gegenwärtig verfügbaren Optionen:
+
+### Proxy
+
+Falls Sie Proxies benötigen können Sie PHPScraper wie folgt konfigurieren:
+
+```php
+$web->setConfig(['proxy' => 'http://user:password@127.0.0.1:3128']);
+```
+
+::: tip
+Falls Sie nach einem günstigen Proxy suchen ist [IProyal](https://iproyal.com?r=119987) einen Blick wert.
+:::
+
+### Timeout setzen
+
+Das `timeout` kann mit `setConfig` gesetzt werden:
+
+```php
+$web->setConfig(['timeout' => 15]);
+```
+
+Der timeout kann mit `0` gedeaktiviert werden.
+
+### Disabling SSL
+
+Während es nicht empfohlen ist, kann es notwendig sein die SSL checks zu deaktivieren. Dies kann wie folgt erreicht werden:
+
+```php
+$web->setConfig(['disable_ssl' => true]);
+```
+
+`setConfig` kann mehrfach aufgerufen werden. Es speichert die Konfiguration und merged frühere Einstellungen. Dies sollte bedacht werden, wenn man etwas zurücksetzen will.
+
 
 Ein Problem gefunden und gefixt? Super!
 ---------------------------------------

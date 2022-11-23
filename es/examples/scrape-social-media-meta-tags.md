@@ -2,7 +2,7 @@
 image: https://api.imageee.com/bold?text=PHP:%20Scraping%20Social%20Tags&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
-# Scraping Social Media Meta Tags
+# Scrape Social Media Meta Tags
 
 El raspado de las etiquetas de compartición de las redes sociales de un sitio web puede realizarse mediante los siguientes métodos. El conjunto exacto de resultados depende de las etiquetas proporcionadas. Se incluyen todas las etiquetas, siempre que estén en el espacio de nombres prefijado (por ejemplo, `twitter:` para Twitter Cards).
 
@@ -12,7 +12,7 @@ El raspado de las etiquetas de compartición de las redes sociales de un sitio w
 Se pueden obtener datos de gráficos abiertos:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navegar a la página de la prueba. La página contiene:
@@ -62,7 +62,7 @@ Si no se encuentran datos, el array se devolverá vacío.
 El análisis de la Twitter Card funciona de forma similar:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navegue a la página de prueba. La página contiene la siguiente tarjeta de Twitter:

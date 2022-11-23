@@ -42,7 +42,7 @@ Aquí hay algunos ejemplos de lo que la biblioteca de raspado web puede hacer en
 ### Scrape Meta Information:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navegue hasta la página de pruebas. Contiene:
@@ -66,7 +66,7 @@ La mayor parte de la información se puede acceder directamente, ya sea como cad
 ### Raspado de contenidos, como imágenes:
 
 ```php
-$web = new \spekulatius\phpscraper;
+$web = new \Spekulatius\PHPScraper\PHPScraper;
 
 /**
  * Navegue hasta la página de prueba. Esta página contiene dos imágenes:
@@ -119,15 +119,51 @@ Si estás construyendo un proyecto VanillaPHP, necesitarás incluir el autoloade
 require 'vendor/autoload.php';
 ```
 
-Si estás usando un framework como Laravel, Symfony, Zend, Phalcon o CakePHP, no necesitarás este paso. El autoloader se incluye automáticamente.
+Si estás usando un framework como Laravel, Symfony, Laminas, Phalcon o CakePHP, no necesitarás este paso. El autoloader se incluye automáticamente.
+
+
+Configuración
+-------------
+
+La configuración adicional es opcional. A continuación se muestran las opciones correctamente disponibles.
+
+### Soporte de Proxy
+
+Si necesita proxies, puede configurar el soporte de proxy con `setConfig`:
+
+```php
+$web->setConfig(['proxy' => 'http://user:password@127.0.0.1:3128']);
+```
+
+### Timeout
+
+Puedes establecer el `timeout` usando `setConfig`:
+
+```php
+$web->setConfig(['timeout' => 15]);
+```
+
+Si se pone el tiempo de espera a cero, se desactivará.
+
+### Desactivación de SSL
+
+Aunque no se recomienda, puede ser necesario desactivar las comprobaciones de SSL. Puede hacerlo utilizando:
+
+```php
+$web->setConfig(['disable_ssl' => true]);
+```
+
+Puedes llamar a `setConfig` varias veces. Almacena la configuración y la fusiona con los ajustes anteriores. Esto debe tenerse en cuenta en el improbable caso de uso cuando se desestablecen los valores.
+
 
 ¿Has encontrado un error y lo has arreglado? ¡Impresionante!
 ----------------------------------
 Antes de empezar, familiarícese con las [directrices de contribución](/contributing.html). Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros.
 
+
 Pruebas: Asegurarse de que funciona.
 ----------------------------
 
-El código está cubierto a grandes rasgos con pruebas de extremo a extremo. Para ello, se alojan páginas web sencillas en *https://test-pages.phpscraper.de/*, cargado y analizado usando [PHPUnit](https://phpunit.de/). Estas pruebas también son adecuadas como ejemplos - véase`tests/`!
+El código está cubierto a grandes rasgos con pruebas de extremo a extremo. Para ello, se alojan páginas web sencillas en *https://test-pages.phpscraper.de/*, cargado y analizado usando [PHPUnit](https://phpunit.de/). Estas pruebas también son adecuadas como ejemplos - véase `tests/`!
 
 Dicho esto, es probable que haya casos límite que no funcionen y puedan causar problemas. Si encuentras uno, por favor, levanta un bug en GitHub.
