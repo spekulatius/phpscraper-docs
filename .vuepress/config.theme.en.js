@@ -1,5 +1,5 @@
 module.exports = {
-    selectText: '🇺🇸',
+    selectText: '🌍',
     label: 'English',
     ariaLabel: 'Languages',
     editLinkText: 'Edit this page on GitHub',
@@ -19,6 +19,8 @@ module.exports = {
                 'examples/scrape-header-tags',
                 'examples/scrape-meta-tags',
                 'examples/scrape-social-media-meta-tags',
+                'examples/scrape-feeds',
+                'examples/parse-csv-json-and-xml-files',
             ],
         },
         {
@@ -26,13 +28,14 @@ module.exports = {
             collapsable: false,
             children: [
                 'examples/headings',
+                'examples/outline',
                 'examples/paragraphs',
                 'examples/lists',
-                'examples/outline',
                 'examples/extract-keywords',
                 'examples/scrape-images',
                 'examples/scrape-links',
                 'examples/navigation',
+                'examples/custom-selectors',
             ],
         },
         {

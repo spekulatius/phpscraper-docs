@@ -1,5 +1,5 @@
 module.exports = {
-    selectText: '🇫🇷',
+    selectText: '🌍',
     label: 'Français',
     ariaLabel: 'Langues',
     editLinkText: 'Modifier cette page sur GitHub',
@@ -26,9 +26,9 @@ module.exports = {
             collapsable: false,
             children: [
                 'fr/examples/headings',
+                'fr/examples/outline',
                 'fr/examples/paragraphs',
                 'fr/examples/lists',
-                'fr/examples/outline',
                 'fr/examples/extract-keywords',
                 'fr/examples/scrape-images',
                 'fr/examples/scrape-links',

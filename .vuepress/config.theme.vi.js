@@ -1,5 +1,5 @@
 module.exports = {
-    selectText: '🇻🇳',
+    selectText: '🌍',
     label: 'Tiếng Việt',
     ariaLabel: 'Ngôn ngữ',
     editLinkText: 'Chỉnh sửa trang này trên GitHub',
@@ -26,9 +26,9 @@ module.exports = {
             collapsable: false,
             children: [
                 'vi/examples/headings',
+                'vi/examples/outline',
                 'vi/examples/paragraphs',
                 'vi/examples/lists',
-                'vi/examples/outline',
                 'vi/examples/extract-keywords',
                 'vi/examples/scrape-images',
                 'vi/examples/scrape-links',
