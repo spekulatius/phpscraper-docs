@@ -151,7 +151,7 @@ try {
 
 PHPScraper can assist in collecting feeds such as [RSS feeds, `sitemap.xml`-entries and static search indexes](/examples/scrape-feeds.html). This can be useful when deciding on the next page to crawl or build up a list of pages on a website.
 
-Here we are processing the sitemap into a set of [`FeedEntry`-DTOs](https://github.com/spekulatius/PHPScraper/blob/pre-release-tweaks/src/DataTransferObjects/FeedEntry.php):
+Here we are processing the sitemap into a set of [`FeedEntry`-DTOs](https://github.com/spekulatius/PHPScraper/blob/master/src/DataTransferObjects/FeedEntry.php):
 
 ```php
 (new \Spekulatius\PHPScraper\PHPScraper)
