@@ -2,12 +2,32 @@
 image: https://api.imageee.com/bold?text=PHP%20Scraper:%20Devolviendo%20la%20simplicidad%20al%20scraping%20y%20al%20crawling&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
-PHP Scraper: Devolviendo la simplicidad al scraping y al crawling
-=================================================================
+<center>PHP Scraper: Devolviendo la simplicidad al scraping y al crawling</center>
+===================================================
 
-![PHP Scraper: Devolviendo la simplicidad al scraping y al crawling](logo-light.png)
-
-*de [Peter Thaleikis](https://peterthaleikis.com)*
+<p align="center">
+  <img
+    alt="PHP Scraper: Devolviendo la simplicidad al scraping y al crawling"
+    src="/logo-light.png"
+  />
+  <p align="center">
+    <a href="https://github.com/spekulatius/PHPScraper/actions/workflows/test.yaml">
+      <img src="https://github.com/spekulatius/PHPScraper/actions/workflows/test.yaml/badge.svg" alt="Unit Tests">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/d/total.svg" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/v/stable.svg" alt="Latest Version">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/license.svg" alt="License">
+    </a>
+  </p>
+  <p align="center">
+    <b>de <a href="https://peterthaleikis.com?src=phpscraper">Peter Thaleikis</a></b>
+  </p>
+</p>
 
 El raspado de la web usando PHP puede hacerse más fácilmente. Esta es una envoltura de opinión alrededor de algunas grandes bibliotecas de PHP para hacer el acceso a la web más fácil.
 

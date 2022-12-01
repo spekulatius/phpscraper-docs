@@ -2,12 +2,32 @@
 image: https://api.imageee.com/bold?text=PHP%20Scraper:%20Scraping%20und%20Crawling%20einfach%20gemacht&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
-PHP Scraper: ein web utility für PHP
-====================================
+<center>PHP Scraper: das web utility für PHP</center>
+===================================================
 
-![PHP Scraper: Scraping und Crawling einfach gemacht](logo-light.png)
-
-*von [Peter Thaleikis](https://peterthaleikis.com)*
+<p align="center">
+  <img
+    alt="PHP Scraper: Scraping und Crawling einfach gemacht"
+    src="/logo-light.png"
+  />
+  <p align="center">
+    <a href="https://github.com/spekulatius/PHPScraper/actions/workflows/test.yaml">
+      <img src="https://github.com/spekulatius/PHPScraper/actions/workflows/test.yaml/badge.svg" alt="Unit Tests">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/d/total.svg" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/v/stable.svg" alt="Latest Version">
+    </a>
+    <a href="https://packagist.org/packages/spekulatius/PHPScraper">
+      <img src="https://poser.pugx.org/spekulatius/PHPScraper/license.svg" alt="License">
+    </a>
+  </p>
+  <p align="center">
+    <b>Von <a href="https://peterthaleikis.com?src=phpscraper">Peter Thaleikis</a></b>
+  </p>
+</p>
 
 PHPScraper ist eine Scraping-Bibliothek ohne Schnickschnack für PHP. Bei PHPScraper handelt sich dabei um einen Wrapper um einige großartige PHP-Bibliotheken, die den Zugriff auf das Web erleichtern.
 
