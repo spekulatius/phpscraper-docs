@@ -35,7 +35,7 @@ PHPScraper is a universal web-scraping util for PHP, built with simplicity in mi
 
 Under the hood, it uses
 
-- [Goutte](https://github.com/FriendsOfPHP/Goutte) to access the web
+- [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) (formerly [Goutte](https://github.com/FriendsOfPHP/Goutte)) to access the web
 - [League/URI](https://github.com/thephpleague/uri) to process URLs
 - [donatello-za/rake-php-plus](https://github.com/donatello-za/rake-php-plus) to extract and analyze keywords
 

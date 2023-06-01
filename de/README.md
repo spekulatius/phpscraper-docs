@@ -37,7 +37,7 @@ Die Beispiele vermitteln die Idee besser. Einen Blick wert!
 Die Idee 💡️
 ----------
 
-Der Zugriff auf Websites und das Sammeln grundlegender Informationen aus dem Web ist oft zu komplex. Dieser Wrapper um [Goutte](https://github.com/FriendsOfPHP/Goutte) macht es einfacher. Er erspart Ihnen XPath und Co. und ermöglicht Ihnen den direkten Zugriff auf alles, was Sie brauchen. Web Scraping mit PHP *etwas anders*.
+Der Zugriff auf Websites und das Sammeln grundlegender Informationen aus dem Web ist oft zu komplex. Dieser Wrapper um [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) macht es einfacher. Er erspart Ihnen XPath und Co. und ermöglicht Ihnen den direkten Zugriff auf alles, was Sie brauchen. Web Scraping mit PHP *etwas anders*.
 
 
 Unterstützer 💪️
