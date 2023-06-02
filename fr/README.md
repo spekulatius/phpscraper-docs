@@ -41,7 +41,7 @@ Ce site de documentation en français est en cours d'élaboration. Veuillez éle
 L'idée 💡️
 ----------
 
-Accéder aux sites web et collecter les informations de base du web est trop complexe. Cette enveloppe autour de [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) rend les choses plus faciles. Il vous épargne XPath et autres, en vous donnant un accès direct à tout ce dont vous avez besoin. Le scraping Web avec PHP: un nouveau concept.
+Accéder aux sites web et collecter les informations de base du web est trop complexe. Cette enveloppe autour de [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) (auparavant [Goutte](https://github.com/FriendsOfPHP/Goutte)) rend les choses plus faciles. Il vous épargne XPath et autres, en vous donnant un accès direct à tout ce dont vous avez besoin. Le scraping Web avec PHP: un nouveau concept.
 
 
 Supporters 💪️

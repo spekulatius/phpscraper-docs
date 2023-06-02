@@ -37,7 +37,7 @@ Các ví dụ kể câu chuyện hay hơn nhiều. Hãy xem!
 Ý tưởng 💡️
 ----------
 
-Việc truy cập và lấy các thông tin cơ bản của trang web rất phức tạp. Wrapper [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) này giúp việc này trở nên dễ dàng hơn. Nó giúp bạn tiết kiệm khỏi XPath và đồng., Cho phép bạn truy cập trực tiếp vào mọi thứ bạn cần. Hình dung lại trang web bằng PHP.
+Việc truy cập và lấy các thông tin cơ bản của trang web rất phức tạp. Wrapper [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) (trước kia [Goutte](https://github.com/FriendsOfPHP/Goutte)) này giúp việc này trở nên dễ dàng hơn. Nó giúp bạn tiết kiệm khỏi XPath và đồng., Cho phép bạn truy cập trực tiếp vào mọi thứ bạn cần. Hình dung lại trang web bằng PHP.
 
 
 Nhà tài trợ 💪️
