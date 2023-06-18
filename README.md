@@ -31,11 +31,11 @@ image: https://api.imageee.com/bold?text=PHP%20Scraper:%20a%20web%20utility%20fo
   </p>
 </p>
 
-PHPScraper is a universal web-scraping util for PHP, built with simplicity in mind. The goal is to make xPath Selectors *optional* and avoid the commonly needed boilerplate code. Just create an instance of *PHPScraper*, *go* to a website, and start collecting data. The examples below tell the story much better. Have a look!
+PHPScraper is a versatile web-utility for PHP. Its primary objective is to streamline the process of extracting information from websites, allowing you to focus on accomplishing tasks without getting caught up in the complexities of selectors, data structure preparation, and conversion.
 
 Under the hood, it uses
 
-- [Goutte](https://github.com/FriendsOfPHP/Goutte) to access the web
+- [BrowserKit](https://symfony.com/doc/current/components/browser_kit.html) (formerly [Goutte](https://github.com/FriendsOfPHP/Goutte)) to access the web
 - [League/URI](https://github.com/thephpleague/uri) to process URLs
 - [donatello-za/rake-php-plus](https://github.com/donatello-za/rake-php-plus) to extract and analyze keywords
 

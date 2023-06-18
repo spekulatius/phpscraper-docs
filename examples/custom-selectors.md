@@ -70,7 +70,7 @@ echo $web->filter("//*[@class='by-class']");   // "Selector Tests"
 
 ## Troubleshooting
 
-When using custom selectors, PHPScraper hands you the full power of Guotte. You will also receive all errors directly from Guotte instead of PHPScraper (for now).
+When using custom selectors, PHPScraper hands you the full power of BrowserKit. You will also receive all errors directly from BrowserKit instead of PHPScraper (for now).
 
 Below are some common errors while working with custom xPaths:
 
