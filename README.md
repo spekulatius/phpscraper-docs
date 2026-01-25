@@ -284,7 +284,7 @@ $web->setConfig(['proxy' => 'http://user:password@127.0.0.1:3128']);
 ```
 
 ::: tip
-If you're looking for decent prices residential proxy, check [IProyal](https://iproyal.com?r=119987).
+If you're looking for decent prices residential proxy, check [IProyal](https://iproyal.com?r=119987) or [Roundproxies](https://roundproxies.com/).
 :::
 
 ### Timeout
