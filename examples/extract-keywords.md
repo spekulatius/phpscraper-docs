@@ -1,4 +1,6 @@
 ---
+title: "PHP: Extract Keywords from a Web Page"
+description: "Extract and score significant keywords and phrases from any web page with PHP. PHPScraper pulls keywords from the title, meta tags, headings, paragraphs, link anchors and image titles."
 image: https://api.imageee.com/bold?text=PHP:%20Extract%20Keywords&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 

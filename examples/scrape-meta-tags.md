@@ -64,7 +64,7 @@ echo $web->keywordString;   // "one, two, three"
 ```
 
 ::: tip
-This refers only to the keywords in the "keyword" meta-tag. You can also [extract the content keywords](/examples/extract-keywords.html)) using PHPScraper.
+This refers only to the keywords in the "keyword" meta-tag. You can also [extract the content keywords](/examples/extract-keywords.html) using PHPScraper.
 :::
 
 
@@ -100,10 +100,10 @@ var_dump($web->metaTags);
  * Contains:
  *
  * [
- *     'Lorem ipsum',
- *     'https://test-pages.phpscraper.de/assets/cat.jpg',
- *     ['one', 'two', 'three'],
- *     'Lorem ipsum dolor etc.',
+ *     'author' => 'Lorem ipsum',
+ *     'image' => 'https://test-pages.phpscraper.de/assets/cat.jpg',
+ *     'keywords' => ['one', 'two', 'three'],
+ *     'description' => 'Lorem ipsum dolor etc.',
  * ]
  */
 ```

@@ -49,7 +49,7 @@ var_dump($web->unorderedLists);
  * Only ordered lists (<ol>)
  *
  * [
- *     "type" => "ul",
+ *     "type" => "ol",
  *     "children" => ... // List of childNodes
  *     "children_plain" =>
  *     [
