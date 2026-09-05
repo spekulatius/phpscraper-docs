@@ -1,4 +1,6 @@
 ---
+title: "PHP: Extraer palabras clave de una página web"
+description: "Extrae y puntúa palabras clave y frases significativas de cualquier página web con PHP. PHPScraper obtiene palabras clave del título, las meta etiquetas, los encabezados, los párrafos, los textos de enlace y los títulos de imagen."
 image: https://api.imageee.com/bold?text=PHP:%20Extract%20Keywords&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 

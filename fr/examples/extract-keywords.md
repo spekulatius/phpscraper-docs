@@ -1,4 +1,6 @@
 ---
+title: "PHP : Extraire les mots-clés d'une page web"
+description: "Extrayez et notez les mots-clés et expressions significatifs de n'importe quelle page web avec PHP. PHPScraper récupère les mots-clés à partir du titre, des balises méta, des titres, des paragraphes, des ancres de liens et des titres d'images."
 image: https://api.imageee.com/bold?text=PHP:%20Extract%20Keywords&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 

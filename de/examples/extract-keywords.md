@@ -1,4 +1,6 @@
 ---
+title: "PHP: Keywords aus einer Webseite extrahieren"
+description: "Extrahieren und bewerten Sie relevante Keywords und Phrasen von jeder Webseite mit PHP. PHPScraper liest Keywords aus Titel, Meta-Tags, Überschriften, Absätzen, Link-Ankertexten und Bildtiteln aus."
 image: https://api.imageee.com/bold?text=PHP:%20Extract%20Keywords&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 

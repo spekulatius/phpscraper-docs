@@ -1,4 +1,6 @@
 ---
+title: "PHP: Trích xuất từ khóa từ trang web"
+description: "Trích xuất và chấm điểm các từ khóa và cụm từ quan trọng từ bất kỳ trang web nào bằng PHP. PHPScraper lấy từ khóa từ tiêu đề, thẻ meta, tiêu đề phụ, đoạn văn, văn bản liên kết và tiêu đề hình ảnh."
 image: https://api.imageee.com/bold?text=PHP:%20Extract%20Keywords&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
