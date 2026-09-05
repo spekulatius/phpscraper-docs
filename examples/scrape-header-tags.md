@@ -111,9 +111,9 @@ echo $web->contentType;     // "text/html; charset=utf-8"
 ```
 
 
-## CSFR Token
+## CSRF Token
 
-The CSFR token method assumes that the token is stored in a meta tag with the name "csrf-token". This is the default for Laravel. You can access it using the following code:
+The CSRF token method assumes that the token is stored in a meta tag with the name "csrf-token". This is the default for Laravel. You can access it using the following code:
 
 ```php
 $web = new \Spekulatius\PHPScraper\PHPScraper;

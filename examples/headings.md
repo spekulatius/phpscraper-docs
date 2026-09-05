@@ -23,7 +23,7 @@ $web = new \Spekulatius\PHPScraper\PHPScraper;
  *
  * <title>Outline Test</title>
  */
-$web->go('https://test-pages.phpscraper.de/content/online.html');
+$web->go('https://test-pages.phpscraper.de/content/outline.html');
 
 // Print the H1 heading
 echo $web->h1[0];          // "Outline Test"
@@ -53,7 +53,7 @@ $web = new \Spekulatius\PHPScraper\PHPScraper;
  * <h3>Example 3</h3>
  * <p>Here would be another example.</p>
  */
-$web->go('https://test-pages.phpscraper.de/content/online.html');
+$web->go('https://test-pages.phpscraper.de/content/outline.html');
 
 /**
  * Return the h3 headings:
@@ -96,7 +96,7 @@ $web = new \Spekulatius\PHPScraper\PHPScraper;
  * <h3>Example 3</h3>
  * <p>Here would be another example.</p>
  */
-$web->go('https://test-pages.phpscraper.de/content/online.html');
+$web->go('https://test-pages.phpscraper.de/content/outline.html');
 
 /**
  * $headings contains now:

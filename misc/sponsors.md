@@ -6,7 +6,7 @@ PHP Scraper is proudly supported by:
 
 ## Becoming a Sponsor
 
-Thank you for your interesting in becoming a supporter of PHP Scraper! PHP Scraper offers custom sponsorship packages to your needs. Please [reach out](https://peterthaleikis.com/contact) to discuss details.
+Thank you for your interest in becoming a supporter of PHP Scraper! PHP Scraper offers custom sponsorship packages to your needs. Please [reach out](https://peterthaleikis.com/contact) to discuss details.
 
 ## Commercial Support
 
