@@ -101,3 +101,8 @@ $data = $web->twitterCard;
 ```
 
 In similar fashion to Open Graph, the array will be empty if no Twitter Card tags have been found.
+
+
+## Going Further: Platform-Specific Scraping
+
+Meta tags only cover what a page chooses to expose publicly. If you need deeper, structured data straight from a platform, take a look at our proposed scraper APIs for [Facebook](/apis/facebook.html), [Instagram](/apis/instagram.html), [LinkedIn](/apis/linkedin.html) and [TikTok](/apis/tiktok.html).

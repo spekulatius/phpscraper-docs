@@ -1,4 +1,5 @@
 ---
+title: "Librería PHP para Web Scraping — PHP Scraper"
 image: https://api.imageee.com/bold?text=PHP%20Scraper:%20Devolviendo%20la%20simplicidad%20al%20scraping%20y%20al%20crawling&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 description: "PHPScraper es una librería PHP gratuita y de código abierto para hacer web scraping y crawling de sitios web. Extrae enlaces, imágenes, meta tags, palabras clave y mucho más con una API simple y encadenable."
 ---

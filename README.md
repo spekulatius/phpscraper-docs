@@ -1,4 +1,6 @@
 ---
+title: "PHP Web Scraper: A Simple Library for Web Scraping & Crawling"
+description: "PHPScraper is a free, open-source PHP library for web scraping and crawling websites. Extract links, images, meta tags, keywords and more with a simple, chainable API."
 image: https://api.imageee.com/bold?text=PHP%20Scraper:%20a%20web%20utility%20for%20PHP&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 

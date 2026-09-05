@@ -1,4 +1,6 @@
 ---
+title: "Thư viện PHP Web Scraping — PHP Scraper"
+description: "PHPScraper là thư viện PHP miễn phí, mã nguồn mở để web scraping và crawling trang web. Trích xuất liên kết, hình ảnh, thẻ meta, từ khóa và nhiều hơn nữa với một API đơn giản, dễ dùng."
 image: https://api.imageee.com/bold?text=PHPScraper:%20an%20highly%20opinionated%20web-interface&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
 ---
 
