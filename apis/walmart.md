@@ -1,18 +1,28 @@
-# Walmart Scraper API
+---
+title: "Walmart Scraping Options: APIs & Tools"
+description: "A practical rundown of ways to get product data out of Walmart — the official affiliate API, commercial scraping services, open-source scrapers, and research built on scraped retail prices."
+image: https://api.imageee.com/bold?text=PHP:%20Walmart%20Scraping%20Options&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
+---
 
-The team behind PHP Scraper is working on providing commercial APIs for various common use cases as well as platforms. These APIs aren't self-hosted. You won't need to worry about rotating IPs/proxies, running a headless browser such as Puppeteer. A simple API call will get you all information required. The services will be provided on an attractive usage-dependent fee-structure basis.
+# Walmart Scraping Options
 
-For Walmart we are considering the implementation of an API with the following scope.
+## Official Route: Walmart's Developer Platforms
 
-## Proposed Supported Endpoints
+- **[Walmart.io / Affiliate API](https://walmart.io/)** — Walmart's developer portal for approved affiliates and partners, giving programmatic access to product data for building links and integrations. Scoped to affiliate use cases, not general-purpose bulk extraction.
 
-- Get Product Details
-- Keyword Search for Products
+## Commercial Scraping Services
 
-::: tip
-Please note this list of API endpoints is *not* final and is likely going to change.
-:::
+- **[Bright Data — Walmart Scraper API](https://brightdata.com/products/web-scraper/walmart)** — a managed endpoint returning a large raw schema (~90 top-level fields including pricing, variants, nutrition info and review images) as structured JSON.
+- **[Apify — Walmart Product Scraper](https://apify.com/automation-lab/walmart-scraper)** — pay-per-result actor for prices, reviews and availability by search or URL.
+- **[RapidAPI — Axesso Walmart Data Service](https://rapidapi.com/axesso/api/axesso-walmart-data-service)** — a RapidAPI marketplace listing from an established scraping-data provider, covering product, price and review lookups.
 
-## Platform Support
+Priced on usage — check current terms before committing to a plan.
 
-With the approach to use a managed API, users are freed from worrying about rotating proxies, scaling issues, and outages. Also, a wide range of platforms is supported. You can easily integrate into NodeJS, Python (without requests or BeautifulSoup), Golang, etc. Any platform that allows to execute GET requests can be programmed to request data from this service.
+## Open-Source Options
+
+- **[walmart-python-scrapy-scraper](https://github.com/python-scrapy-playbook/walmart-python-scrapy-scraper)** — a Scrapy-based spider for Walmart product pages, a reasonable starting point for a self-hosted approach.
+- **PHPScraper** can parse Walmart's public product pages directly for lightweight, occasional lookups.
+
+## Real-World Use Case
+
+- **[The Billion Prices Project](https://www.nber.org/papers/w22111)** — the MIT/Harvard project that scraped online retail prices (Walmart-scale big-box retailers among them) from hundreds of sites daily, producing inflation indicators published with a 3-day lag versus the month-plus lag of traditional government price surveys.

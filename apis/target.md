@@ -1,18 +1,25 @@
-# Target Scraper API
+---
+title: "Target Scraping Options: Tools & Techniques"
+description: "A practical rundown of ways to get product data out of Target.com — commercial scraping services, open-source scrapers, and the technical challenges of its React-based storefront."
+image: https://api.imageee.com/bold?text=PHP:%20Target%20Scraping%20Options&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
+---
 
-The team behind PHP Scraper is working on providing commercial APIs for various common use cases as well as platforms. These APIs aren't self-hosted. You won't need to worry about rotating IPs/proxies, running a headless browser such as Puppeteer. A simple API call will get you all information required. The services will be provided on an attractive usage-dependent fee-structure basis.
+# Target Scraping Options
 
-For Target we are considering the implementation of an API with the following scope.
+Target doesn't run a public product-data API for third parties, so the practical options here are a commercial scraping service or a DIY scraper — either way, expect to deal with a fully client-rendered storefront.
 
-## Proposed Supported Endpoints
+## Commercial Scraping Services
 
-- Get Product Details
-- Keyword Search for Products
+- **[Bright Data — Target Scraper API](https://brightdata.com/products/web-scraper/target)** — managed endpoint for product, pricing, review and category data as structured JSON; handles the JavaScript rendering Target.com relies on internally.
+- **[RapidAPI — Target.com Shopping API](https://rapidapi.com/MicroAPI/api/target-com-shopping-api)** — a RapidAPI marketplace listing for product search and detail lookups, billed per request.
 
-::: tip
-Please note this list of API endpoints is *not* final and is likely going to change.
-:::
+Priced on usage — check current terms before committing to a plan.
 
-## Platform Support
+## Open-Source Options
 
-With the approach to use a managed API, users are freed from worrying about rotating proxies, scaling issues, and outages. Also, a wide range of platforms is supported. You can easily integrate into NodeJS, Python (without requests or BeautifulSoup), Golang, etc. Any platform that allows to execute GET requests can be programmed to request data from this service.
+- **[Target.com-Scrapers](https://github.com/scraper-bank/Target.com-Scrapers)** — production-oriented scrapers for product categories, details and search results, with implementations in both Python (BeautifulSoup/Playwright/Selenium) and Node.js.
+- **PHPScraper** can fetch the initial HTML, but since Target.com is a React single-page app that loads prices and inventory via internal client-side API calls, you'll typically need a headless browser (or to call those internal endpoints directly) rather than plain HTML parsing.
+
+## Real-World Use Case
+
+- **[The Billion Prices Project](https://www.nber.org/papers/w22111)** — an MIT/Harvard research initiative that scraped prices from hundreds of online retailers daily (Target-style big-box retail included) to build real-time inflation indicators, at a scale (millions of prices/day) far beyond what manual price surveys can achieve.

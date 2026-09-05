@@ -1,18 +1,28 @@
-# Alibaba/AliExpress Scraper API
+---
+title: "Alibaba & AliExpress Scraping Options: APIs, Tools & Research Uses"
+description: "A practical rundown of ways to get data out of Alibaba/AliExpress — the official Open Platform affiliate API, commercial scraping services, open-source wrappers, and real-world research uses."
+image: https://api.imageee.com/bold?text=PHP:%20Alibaba%2FAliExpress%20Scraping%20Options&bg_image=https://images.unsplash.com/photo-1542762933-ab3502717ce7
+---
 
-The team behind PHP Scraper is working on providing commercial APIs for various common use cases as well as platforms. These APIs aren't self-hosted. You won't need to worry about rotating IPs/proxies, running a headless browser such as Puppeteer. A simple API call will get you all information required. The services will be provided on an attractive usage-dependent fee-structure basis.
+# Alibaba & AliExpress Scraping Options
 
-For Alibaba we are considering the implementation of an API with the following scope.
+## Official Route: AliExpress Open Platform
 
-## Proposed Supported Endpoints
+- **[AliExpress Open Platform](https://openservice.aliexpress.com/doc/doc.htm)** — the official affiliate/dropshipping API. Requires signing the Open Platform Agreement and app approval (1–2 business days), after which you get an App Key for the Affiliate and Dropshipping APIs — the sanctioned way to pull product and pricing data at scale.
 
-- Search for Products by Keyword
-- Get Product Information
+## Commercial Scraping Services
 
-::: tip
-Please note this list of API endpoints is *not* final and is likely going to change.
-:::
+- **[Bright Data — AliExpress Scraper](https://brightdata.com/products/web-scraper/aliexpress)** — managed endpoints for product listings, prices, seller ratings and shipping data, returned as structured JSON.
+- **[Apify — AliExpress Product & Seller Catalog Scraper](https://apify.com/automation-lab/aliexpress-products-scraper)** — pay-per-result actor for products, prices, reviews and seller/store leads by search keyword or URL.
+- **[RapidAPI — AliExpress DataHub](https://rapidapi.com/ecommdatahub/api/aliexpress-datahub)** — a RapidAPI marketplace listing covering search, category, product-detail and shipping endpoints.
 
-## Platform Support
+Priced on usage and limited to publicly visible data — check current terms before committing to a plan.
 
-With the approach to use a managed API, users are freed from worrying about rotating proxies, scaling issues, and outages. Also, a wide range of platforms is supported. You can easily integrate into NodeJS, Python (without requests or BeautifulSoup), Golang, etc. Any platform that allows to execute GET requests can be programmed to request data from this service.
+## Open-Source Options
+
+- **[python-aliexpress-api](https://github.com/sergioteula/python-aliexpress-api)** — a Python wrapper around AliExpress's own official Affiliate API (not raw HTML scraping), which makes it more durable than a scraper tied to the page markup.
+- **PHPScraper** itself can fetch and parse public AliExpress product pages, but heavy client-side rendering means this works best combined with a headless browser.
+
+## Real-World Use Cases & Case Studies
+
+- **[Counterfeit product detection research](https://www.sciencedirect.com/science/article/abs/pii/S0167923617301720)** — academic work applying web scraping, NLP and topic analysis to marketplace reviews to flag likely-counterfeit listings — a good illustration of scraped e-commerce data used for a genuine research question rather than just price-checking.
